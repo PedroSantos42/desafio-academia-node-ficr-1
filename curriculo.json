@@ -1,0 +1,39 @@
+{
+    "formacao": [
+        {
+            "instituicao": "Ibratec - Instituto Brasileiro de Tecnologia",
+            "curso": "Análise e Desenvolvimento de Sistemas",
+            "inicio": "01/07/2017",
+            "termino": "atual"
+        },
+        {
+            "instituicao": "FICR - Faculdade Católica Imaculada Conceição do Recife",
+            "curso": "Análise e Desenvolvimento de Sistemas",
+            "inicio": "27/02/2020",
+            "termino": "atual"
+        }
+    ],
+    "experiencia_profissional": [
+        {
+            "empresa": "Trinity Soluções",
+            "funcao": "Estagiário de Suporte",
+            "atividade": "Suporte a aplicações envolvendo tecnologias Java para Android e Web, C# e SQL",
+            "inicio": "08/10/2018",
+            "termino": "23/05/2019"
+        },
+        {
+            "empresa": "Avanade",
+            "funcao": "Software Engineer Associate",
+            "atividade": "Desenvolvimento e manutenção de aplicação legado com tecnologias ASP.NET, VB, C# e SQL",
+            "inicio": "03/06/2019",
+            "termino": "01/10/2019"
+        },
+        {
+            "empresa": "Direction Systems",
+            "funcao": "Estagiário Desenvolvedor",
+            "atividade": "Desenvolvimento de funcionalidades para aplicação existente com tecnologias Linq, Entity Framework, ASP.NET MVC",
+            "inicio": "14/10/2019",
+            "termino": "atual"
+        }
+    ]
+}
