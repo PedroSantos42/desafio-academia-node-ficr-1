@@ -8,13 +8,14 @@ routes.get('/', (req, res, next) => res.send('Hello, desafio Nodejs'))
 routes.get('/github', async (req, res, next) => {
 
     let repos = []
-    let name, bio, company
+    let name, bio, company, html_url
 
     try {
         const { data } = await axios.get('https://api.github.com/users/PedroSantos42');
         company = data.company
         name = data.name
         bio = data.bio
+        html_url = data.html_url
     } catch (error) {
         console.log('error', error)
         return res.send(error);
@@ -41,8 +42,16 @@ routes.get('/github', async (req, res, next) => {
         console.log('error', error)
         return res.send(error);
     }
-    // console.log('repos', repos)
-    // console.log('user-info', `name: ${name}, bio: ${bio}, company: ${company}`)
+
+    const githubProfile = {
+        name,
+        html_url,
+        bio,
+        company,
+        repositories: repos
+    }
+
+    res.send(githubProfile)
 })
 
 module.exports = routes
