@@ -1,6 +1,6 @@
 const Router = require('express')
 const CurriculoController = require('./controllers/CurriculoController')
-const NotFound = require('../middlewares/NotFound')
+const NotFound = require('./middlewares/NotFound')
 
 const routes = Router()
 
