@@ -1,7 +1,7 @@
 const helper = require('./../helpers/FileHelper')
 
 class ReadLocalFileService {
-    async getUserInfo() {
+    async getUserFile() {
         return helper.get()
     }
 }

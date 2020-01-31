@@ -1,7 +1,7 @@
 const axios = require('axios')
 
 class FacebookService {
-    async getUserInfo() {
+    async facebookUserInfo() {
         const FACEBOOK_URL = `https://graph.facebook.com/v5.0/me?fields=picture%2Cfirst_name%2Clast_name%2Caddress%2Cgender%2Cbirthday%2Cemail%2Clocation&access_token=${process.env.FACEBOOK_TOKEN}`
 
         let first_name, birthday, last_name, gender, email, location, picture
@@ -28,12 +28,13 @@ class FacebookService {
                 location,
                 picture
             }
+
+            return facebookProfile
+
         } catch (error) {
             console.log('error', error)
             return error
         }
-
-        return facebookProfile
     }
 }
 
