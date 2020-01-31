@@ -5,8 +5,14 @@ const routes = Router()
 
 routes.get('/', (req, res, next) => res.send('Hello, desafio Nodejs'))
 
-routes.get('/github', CurriculoController.github)
-routes.get('/facebook', CurriculoController.facebook)
-routes.get('/text', CurriculoController.text)
+routes.get('/curriculo', CurriculoController.curriculo)
 
 module.exports = routes
+
+/*
+
+, function (req, res, next) {
+    if (req.route.path != '/github2/') return res.status(404).send('teste')
+}
+
+*/
