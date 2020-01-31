@@ -4,8 +4,8 @@ const NotFound = require('./middlewares/NotFound')
 
 const routes = Router()
 
-routes.use(NotFound)
-
 routes.get('/curriculo', CurriculoController.curriculo)
+
+routes.use(NotFound)
 
 module.exports = routes
